@@ -25,6 +25,12 @@ public class Employee {
         System.out.println("Designation: "+this.designation);
         System.out.println();
     }
+ //OVERRIDING THE TOSTRING CLASS
+    public String toString()
+    {
+        return this.firstname+" "+this.lastname+" of age "+this.age+" has a designation of "+this.designation;
+    }
+
     public void setFirstname(String fn)
     {
         this.firstname=fn;
@@ -53,6 +59,7 @@ public class Employee {
         emp.setDesignation("Theoretical Physicist");
         emp.display();
         emp1.display();
+        System.out.println(emp.toString());
 
     }
 }
